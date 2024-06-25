@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Indian Cricket Players</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <body>
+            <style>
+                body{
+                    background-color: rgb(18, 18, 134);
+                }             
+        img{
+        width: 200px;
+        height: fit-content;
+        text-align: center;  
+        margin: 20px;  
+        border: 5px solid #000;  
+        padding: 10px;  
+        display: block;
+        }
+        .player-card {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #b80af7;
+            background-color: #52aed5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .player-card img {
+            width: 150px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #3cb6de;
+            margin: 15% auto;
+            padding: 20px;
+            border: 10px solid #322e2e;
+            width: 80%;
+            max-width: 600px;
+        }
+        .close {
+            color: #ecbcbc;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: rgb(1, 0, 0);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h2,h3{
+            color: rgb(188, 95, 7);
+        }
+            </style>
+            <div class="player-card">
+                <img src="Virat Kohli.jpg" alt="Virat Kohli" onclick="openModal('viratKohliModal')">
+                <h3>Virat Kohli</h3>
+            </div>
+        
+            <div class="player-card">
+                <img src="Rohit Sharma.jpg" alt="Rohit Sharma" onclick="openModal('rohitSharmaModal')">
+                <h3>Rohit Sharma</h3>
+            </div>
+
+            <div class="player-card">
+                <img src="Jasprit Bumrah.jpeg" alt="Jasprit Bumrah" onclick="openModal('JaspritBumrahModal')">
+                <h3>Jasprit Bumrah</h3>
+            </div>
+
+            <div class="player-card">
+                <img src="Ravindra Jadeja.jpg" alt="Ravindra Jadeja" onclick="openModal('RavindraJadejaModal')">
+                <h3>Ravindra Jadeja</h3>
+            </div>
+
+            <div class="player-card">
+                <img src="Ravichandran Ashwin.jpeg" alt="Ravichandran Ashwin" onclick="openModal('RavichandranAshwinModal')">
+                <h3>Ravichandran Ashwin</h3>
+            </div>
+
+            <div class="player-card">
+                <img src="Hardik Pandya.jpeg" alt="Hardik Pandya" onclick="openModal('HardikPandyaModal')">
+                <h3>Hardik Pandya</h3>
+            </div>
+
+            <div class="player-card">
+                <img src="Rishab Pant.jpeg" alt="Rishab Pant" onclick="openModal('RishabPantModal')">
+                <h3>Rishab Pant</h3>
+            </div>
+
+            <div class="player-card">
+                <img src="Kuldeep Yadav.jpeg" alt="Kuldeep Yadav" onclick="openModal('KuldeepYadavModal')">
+                <h3>Kuldeep Yadav</h3>
+            </div>
+
+            <div class="player-card">
+                <img src="Mohammed Shami.jpg" alt="Mohammed Shami" onclick="openModal('MohammedShamiModal')">
+                <h3>Mohammed Shami</h3>
+            </div>
+
+            <div class="player-card">
+                <img src="Mohammed Siraj.jpg" alt="Mohammed Siraj" onclick="openModal('MohammedSirajModal')">
+                <h3>Mohammed Siraj</h3>
+            </div>
+
+            <div class="player-card">
+                <img src="Axar Patel.jpg" alt="Axar Patel" onclick="openModal('AxarPatelModal')">
+                <h3>Axar Patel</h3>
+            </div>
+       
+            <!-- Virat Kohli Modal -->
+            <div id="viratKohliModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('viratKohliModal')"></i>
+                    <h2>Virat Kohli</h2>
+                    <p>Stats and records for Virat Kohli in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs - 7547, Avg - 49.16, 100s - 27 HS:254* Wickts:0 Catches:111</li>
+                        <li>ODIs: Runs - 12169, Avg - 58.68, 100s - 43 HS:183 wickets:5 BB:1/13 Catches:151</li>
+                        <li>T20Is: Runs - 4042, Avg - 51.76, 100s - 1 HS:122*</li>
+                        <li>Fastest to - 3,000 runs (81 innings), 3,500 runs (96 innings), and 4,000 runs (107 innings)</li>
+                        <li> Most Player of the Match awards (15 times)(T20Is) and Player of the Series awards (7 times)</li>
+                        <li>Most ODI centuries (50)
+                        <li> Most ODI centuries while chasing (27)</li>
+                        <li> Most ODI centuries in India (22)</li>
+                        <li> Fastest to -[b] 8,000 runs (175 innings),[140] 9,000 runs (194 innings), 10,000 runs (205 innings), 
+                            11,000 runs (222 innings), 12,000 runs (242 innings), and 13,000 runs (267 innings)</li>
+                        <li>Most wins as captain of India, with 40 wins out of 68 matches</li>
+                        <li> Four Test double-hundreds in four consecutive series</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Rohit Sharma Modal -->
+            <div id="rohitSharmaModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('rohitSharmaModal')"></i>
+                    <h2>Rohit Sharma</h2>
+                    <p>Stats and records for Rohit Sharma in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs - 4138, Avg - 45.47, 50s-17 100s - 12 HS:212 Wickets:2 BB:1/35 Catches:60</li>
+                        <li>ODIs: Runs - 10709, Avg - 49.12,50s-55 100s - 31 HS:264 Wickets:9 BB:2/27 Catches:93</li>
+                        <li>T20Is: Runs - 4042, Avg - 31.79,50s-30 100s - 5 HS:121* Catches:60</li>
+                        <li>Most Sixes in International Cricket</li>
+                        <li>Most double-hundreds in ODIs </li>
+                        <li>India's Highest successful T20I captain</li>
+                        <li>Joint-most successful IPL captain(5)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Jasprit Bumrah Modal -->
+            <div id="JaspritBumrahModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('JaspritBumrahModal')"></i>
+                    <h2>Jasprit Bumrah</h2>
+                    <p>Stats and records for Jasprit Bumrah in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs - 271, Avg - 7.3, 50s-0 100s - 0 HS:34* Wickets:159 BB:6/27 4W:4 5W:10 catches:14</li>
+                        <li>ODIs: Runs - 91, Avg - 7.6,50s-0 100s -0  HS:16 Wickets:149 BB:6/19 4W:6 5W:2 catches:18</li>
+                        <li>T20Is: Runs - 8, Avg -2.7 ,50s-0 100s -0  HS:7 Wickets:79 BB:3/11 Catches:8</li>
+                        <li>Bumrah is the fastest Indian pacer to take 150 wickets in Test cricket</li>
+                        <li>Second fastest Indian bowler to reach 100 wickets in One Day International (ODI) cricket.</li>
+                        <li>He is the first bowler to have achieved the number one ranking in the ICC men's player rankings in all three formats of the game.</li>
+                        <li>He also holds the record of scoring the highest number of runs in an over in Test cricket.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ravindra Jadeja Modal -->
+            <div id="RavindraJadejaModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('RavindraJadejaModal')"></i>
+                    <h2>Ravindra Jadeja</h2>
+                    <p>Stats and records for Ravindra Jadeja in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs -3036 , Avg -36.1 , 50s-20 100s - 4 HS:175* Wickets:294 BB:7/42 4W:13 5W:13 catches:42</li>
+                        <li>ODIs: Runs -2756 , Avg - 32.4,50s- 13 100s -0  HS:87 Wickets:220 BB:5/33 4W:7 5W:2 catches:74</li>
+                        <li>T20Is: Runs -480 , Avg - 21.8,50s-0 100s -0  HS:46* Wickets:53 BB:3/15 Catches:25</li>
+                        <li>Only the second Indian after Ashwin to score 100 and take 5W in a match</li>
+                        <li>Highest score while batting at 7 in Tests</li>
+                        <li>Most runs in an innings at a batting position in ODIs</li>
+                        <li>Most catches by a substitut fielder in an innings in T20Is</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Ravichandran Ashwin Modal -->
+             <div id="RavichandranAshwinModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('RavichandranAshwinModal')"></i>
+                    <h2>Ravichandran Ashwin</h2>
+                    <p>Stats and records for Ravichandran Ashwin in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs -3309 , Avg - 26.3, 50s-14 100s -5 HS:124 Wickets:516 BB:7/59 4W:25 5W:36 catches:33</li>
+                        <li>ODIs: Runs -707 , Avg -16.4 ,50s-1 100s -0   HS:65 Wickets:156 BB:4/25 4W:1 5W:0 catches:31</li>
+                        <li>T20Is: Runs -184 , Avg -26.3 ,50s-0 100s -0  HS:31* Wickets:72 BB:4/8 Catches:11</li>
+                        <li>Ashwin has 500 wickets in Tests and is the fastest bowler to reach 300 wickets in terms of number of innings.</li>
+                        <li>He has won ten Man of the Series awards in Tests, which is the highest by an Indian cricketer and the second highest overall.</li>
+                        <li>As an all-rounder in Test cricket, he bats down the order, has scored five Test centuries and is one of the only three players to have scored 3000 runs and taken 500 wickets in Tests.</li>
+                        <li>Fastest Indian to reach 50, 100, 150, 200, 250, 300, 350, 400, 450 and 500 test wickets (in terms of matches)</li>
+                        <li>Highest wicket-taker in a single season. Most dismissals of left-handers in tests</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Hardik Pandya Modal -->
+             <div id="HardikPandyaModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('HardikPandyaModal')"></i>
+                    <h2>Hardik Pandya</h2>
+                    <p>Stats and records for Hardik Pandya in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs -532 , Avg -31.3 , 50s-4 100s -1  HS:108 Wickets:17 BB:5/28 4W:0 5W:1 catches:7</li>
+                        <li>ODIs: Runs -1769 , Avg -34.0 ,50s-11 100s -0  HS:92* Wickets:84 BB:4/24 4W:1 5W:0 catches:32</li>
+                        <li>T20Is: Runs -1355, Avg -25.1 ,50s-3 100s -0  HS:71* Wickets:80 BB:4/16 Catches:46</li>
+                        <li>4th most wickets taken by a non-Wicketkeeper</li>
+                        <li>Outstanding bowling analysis in an innings (3/3)</li>
+                        <li>Best figures by a captain in T20Is</li>
+                        <li>Fewest DUcks in a career</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Rishab Pant Modal -->
+             <div id="RishabPantModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('RishabPantModal')"></i>
+                    <h2>Rishab Pant</h2>
+                    <p>Stats and records for Rishab Pant in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs -2271 , Avg -43.7 , 50s-11 100s -5  HS:159* Wickets:0 BB:- 4W:- 5W:- catches:119</li>
+                        <li>ODIs: Runs -865 , Avg -34.6 ,50s-5 100s -1  HS:125* Wickets:0 BB:- 4W:- 5W:- catches:26</li>
+                        <li>T20Is: Runs -1083, Avg -23.5 ,50s-3 100s -0  HS:65* Wickets:0 BB:- Catches:34</li>
+                        <li>Most dismisals in an test match(11)</li>
+                        <li>First Indian Wicketkeeper batter to score 100 in SENAW</li>
+                        <li>300+ runs and 15 WK dismissals in a series</li>
+                        <li>Most 90's after Sachin</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Kuldeep Yadav Modal -->
+             <div id="KuldeepYadavModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('KuldeepYadavModal')"></i>
+                    <h2>Kuldeep Yadav</h2>
+                    <p>Stats and records for Kuldeep Yadav in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs -191 , Avg -13.6 , 50s-0 100s -0  HS:40 Wickets:53 BB:5/40 4W:3 5W:4 catches:3</li>
+                        <li>ODIs: Runs -190 , Avg -10.0 ,50s-0 100s - 0 HS:19 Wickets:168 BB:6/25 4W:7 5W:2 catches:15</li>
+                        <li>T20Is: Runs -46, Avg -11.5 ,50s-0 100s - 0 HS:23* Wickets:59 BB:5/17 Catches:110</li>
+                        <li>7th Fastest 50 T20I Wickets</li>
+                        <li>5th fastest to 50 ODII Wickets</li>
+                        <li>4th Outstanding Bowling analysis in an Innings</li>
+                        <li>6th career best bowling strikerate in T20Is </li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Mohammed Shami Modal -->
+             <div id="MohammedShamiModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('MohammedShamiModal')"></i>
+                    <h2>Mohammed Shami</h2>
+                    <p>Stats and records for Mohammed Shami in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs -750 , Avg -12.1 , 50s-2 100s -0  HS:56* Wickets:229 BB:6/56 4W:12 5W:6 catches:16</li>
+                        <li>ODIs: Runs -220 , Avg -7.8 ,50s-0 100s -0  HS:25 Wickets:195 BB:7/57 4W:10 5W:5 catches:31</li>
+                        <li>T20Is: Runs -0, Avg -0 ,50s-0 100s -0  HS:0 Wickets:24 BB:3/15 Catches:1</li>
+                        <li>Most consecutive 4 Wickets in a series</li>
+                        <li>3rd fastest to 150 Wickets</li>
+                        <li>5th most wickets in ODI series</li>
+                        <li>9th fastest to 100 ODI wickets</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Mohammed Siraj Modal -->
+             <div id="MohammedSirajModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('MohammedSirajModal')"></i>
+                    <h2>Mohammed Siraj</h2>
+                    <p>Stats and records for Mohammed Siraj in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs - 104, Avg -5.0 , 50s-0 100s -0  HS:16* Wickets:74 BB:6/15 4W:5 5W:3 catches:14</li>
+                        <li>ODIs: Runs -46 , Avg -7.7 ,50s-0 100s -0  HS:9* Wickets:68 BB:6/21 4W:2 5W:1 catches:6</li>
+                        <li>T20Is: Runs -14, Avg -14.0 ,50s-0 100s -0  HS:7* Wickets:13 BB:4/17 Catches:6</li>
+                    </ul>
+                </div>
+            </div>
+
+             <!-- Axar Patel Modal -->
+             <div id="AxarPatelModal" class="modal">
+                <div class="modal-content">
+                    <i class="bi bi-x close" onclick="closeModal('AxarPatelModal')"></i>
+                    <h2>Axar Patel</h2>
+                    <p>Stats and records for Axar Patel in all three formats.</p>
+                    <ul>
+                        <li>Tests: Runs -646 , Avg -35.9 , 50s-4 100s -0  HS:84 Wickets:55 BB:6/38 4W:2 5W:5 catches:4</li>
+                        <li>ODIs: Runs -489 , Avg -18.8 ,50s-2 100s -0  HS:64* Wickets:60 BB:3/24 4W:0 5W:0 catches:23</li>
+                        <li>T20Is: Runs -381, Avg -19.1 ,50s-1 100s -0  HS:65 Wickets:52 BB:3/9 Catches:17</li>
+                        <li>6th most consecutive 4W in an innings in Tests,ODIs,T20Is</li>
+                        <li>Most runs in an innings by his batting position in T20Is</li>
+                        <li>He became the ninth bowler for India to take a five-wicket haul on debut in Test cricket.</li>
+                        <li>BCCI Under-19 cricketer of the Year 2014</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+
+
+            <script>
+                function openModal(modalId) {
+                    document.getElementById(modalId).style.display = "block";
+                }
+        
+                function closeModal(modalId) {
+                    document.getElementById(modalId).style.display = "none";
+                }
+               
+                
+            </script>
+        </body>
+    </head>
+</html>
